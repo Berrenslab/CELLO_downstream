@@ -1,7 +1,12 @@
 # CELLO_downstream
-This is the code to analyse CELLO-seq data post nextflow to obtain a count matrix. To start please download this repository: 
+This is the code to analyse CELLO-seq data post nextflow to obtain a count matrix. T
 
-wget 
+
+o start please download this repository: 
+
+```{ssh}
+git clone https://github.com/Berrenslab/CELLO_downstream.git
+```
 
 ## Set-up 
 We will use a conda environment to have all the required packages / versions. 
