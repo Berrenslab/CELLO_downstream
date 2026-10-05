@@ -33,6 +33,7 @@ The manifest file is needed in the quantify step to specify which reads come fro
 
 cell _tab_ sample _tab_ batch _tab_ path/to/cell/fastq
 
+* See example_manifest.tsv for an example
 * You cannot have _ in the names
 * the file needs to be _ tab_-delimited. You can check this by running:
 ```{ssh}
