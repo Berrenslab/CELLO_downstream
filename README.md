@@ -41,4 +41,6 @@ bash cat -A example_manifest.tsv
 ```
 The spaces across columns should appear as ^I . 
 
+**For more information see the FLAIR documentation:** https://flair.readthedocs.io/en/latest/modules.html
+
 ## Transposable element filtering
