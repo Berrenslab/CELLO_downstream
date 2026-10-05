@@ -26,5 +26,18 @@ To run the pipeline just edit each file with the inputs you need. Note that the 
 3. Correct novel isoforms
 4. Collapse novel isoforms
 5. Quantify expression
+  - this will need an manifest file, see manifest_example.tsv
 
-## Treansposable element filtering
+### Manifest file 
+The manifest file is needed in the quantify step to specify which reads come from which cell. The general structure is
+
+cell _tab_ sample _tab_ batch _tab_ path/to/cell/fastq
+
+* You cannot have _ in the names
+* the file needs to be _ tab_-delimited. You can check this by running:
+```{ssh}
+bash cat -A example_manifest.tsv
+```
+The spaces across columns should appear as ^I . 
+
+## Transposable element filtering
