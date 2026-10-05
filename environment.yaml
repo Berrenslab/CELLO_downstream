@@ -16,3 +16,6 @@ dependencies:
 
   # BED operations
   - bedtools=2.31.1
+
+  #SQUANTI3
+  - SQANTI3=6.0.1
