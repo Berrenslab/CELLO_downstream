@@ -12,14 +12,15 @@ We will use a conda environment to have all the required packages / versions.
 
 ```{ssh}
 conda activate 
-conda env create -f environment.yaml
+conda env create -f CELLO_downstream/environment.yaml
 ```
+* the path may change, you just need to find the file _environment.yaml_, which will be inside _CELLO_downstream_. 
 
 Now whenever you need to access this environment run:  **conda activate CELLO_downstream**
 
 ## Running flair 
 
-To run the pipeline just edit each file with the inputs you need. Note that the references (fastas, gtf) specified here are for mm39. For anything else, just edit the inputs. Please follow each script by its number. 
+To run the pipeline just edit each file with the inputs you need. Note that the references (fastas, gtf) specified here are for mm39. For anything else, just edit the inputs. Please follow each script by its number. The files are in the _CELLO_downstream_ folder. 
 
 1. Reverse complement and concatenate all reads into one big file
 2. Align reads to genome
