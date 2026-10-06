@@ -6,7 +6,7 @@ channels:
 
 dependencies:
   # Reverse complement reads
-  - seqkit=2.14.0
+  - seqtk=1.5
 
   # Mapping reads
   - winnowmap=2.03
