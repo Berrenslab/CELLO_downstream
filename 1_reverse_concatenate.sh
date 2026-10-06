@@ -8,6 +8,8 @@
 #SBATCH --time=55:00:00
 
 # actvate environment 
+source ~/.bashrc
+conda init
 conda activate CELLO_downstream
 
 # path of input corrected fastq reads
