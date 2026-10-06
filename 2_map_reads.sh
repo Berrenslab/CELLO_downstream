@@ -10,6 +10,8 @@
 #SBATCH --error=mapping_wn.err
 
 # activate environment 
+source ~/.bashrc
+conda init
 conda activate CELLO_downstream
 
 # genome-specific kmer file
