@@ -38,7 +38,7 @@ cell _tab_ sample _tab_ batch _tab_ path/to/cell/fastq
 * You cannot have _ in the names
 * the file needs to be _ tab_-delimited. You can check this by running:
 ```{ssh}
-bash cat -A example_manifest.tsv
+cat -A example_manifest.tsv
 ```
 The spaces across columns should appear as ^I . 
 
