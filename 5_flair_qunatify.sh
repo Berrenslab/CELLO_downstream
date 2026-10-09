@@ -16,7 +16,7 @@ collapse_isoforms_fasta='collapse.isoforms.fa'
 # isoform bed 
 collapse_isoforms_bed='collapse.isoforms.bed'
 
-flair quantify -r "$manifest_tsv"  -i $"collapse_isoforms_fasta" \
+flair quantify -r "$manifest_tsv"  -i "$collapse_isoforms_fasta" \
 --output out_ \
 --temp_dir ~ \
 --isoform_bed "$collapse_isoforms_bed" \
