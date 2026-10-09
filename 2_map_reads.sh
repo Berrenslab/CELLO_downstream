@@ -37,3 +37,4 @@ samtools index "$output"
 
 # convert sam to bed 
 module load FLAIR
+bam2Bed12 -i "$output" > "$(basename "$output" .bam).bed"
