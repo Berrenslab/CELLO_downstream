@@ -9,11 +9,6 @@
 #SBATCH --output=mapping_wn.out
 #SBATCH --error=mapping_wn.err
 
-# activate environment 
-source ~/.bashrc
-conda init
-conda activate CELLO_downstream
-
 # genome-specific kmer file
 kmer_file="/home/grte3662/references/mm39/genome/repetitive_k15_mm39.txt"
 # genome fasta
