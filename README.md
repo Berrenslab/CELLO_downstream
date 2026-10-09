@@ -8,7 +8,7 @@ To start please download this repository:
 git clone https://github.com/Berrenslab/CELLO_downstream.git
 ```
 
-We will use a conda environment to have all the required packages / versions. 
+We will use a conda environment to have all the required packages/versions. If you do not have conda installed, please do that first. 
 
 ```{ssh}
 conda activate 
@@ -21,6 +21,14 @@ Now whenever you need to access this environment run:  **conda activate CELLO_do
 ## Running flair 
 
 To run the pipeline just edit each file with the inputs you need. Note that the references (fastas, gtf) specified here are for mm39. For anything else, just edit the inputs. Please follow each script by its number. The files are in the _CELLO_downstream_ folder. 
+
+* to run the code please remember to load the conda environment before using.
+
+```bash
+
+conda activate CELLO_downstream
+
+```
 
 1. Reverse complement and concatenate all reads into one big file
 2. Align reads to genome
