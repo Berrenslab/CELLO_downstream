@@ -20,6 +20,5 @@ genome_sJS="/home/exet4817/smarlow/genomes/mus_musculus/gencode.vM35.annotation.
 
 flair correct --query  "$input" \
 --gtf "$genome_gtf"  \
---output $(basename "$input" .bam) --print_check \
--j "$genome_sJS" \
--t 8
+--output $(basename "$input" .bed) \
+--nvrna -t 8
