@@ -8,9 +8,6 @@
 #SBATCH --output=flair_coll.out
 #SBATCH --error=flair_coll.err
 
-# actvate environment 
-conda activate CELLO_downstream
-
 #input reads
 input_reads="RBB_rev.fastq"
 # input all corrected bed
