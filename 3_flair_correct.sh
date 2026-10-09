@@ -8,23 +8,18 @@
 #SBATCH --output=flair_corr.out
 #SBATCH --error=flair_corr.err
 
-# actvate environment 
-conda activate CELLO_downstream
+# path of input bed output from mapping step
+input="RBB_rev.bed"
 
-# path of input bam output from mapping step
-input="RBB_rev.bam"
-
-# convert bam to bed output 
-bam2Bed12 -i "$input" > "$(basename "$input" .bam).bed"
 # genome fasta
 genome_fasta="/home/exet4817/smarlow/genomes/mus_musculus/mm39.fa"
-# geme gtf 
+# gene GTF 
 genome_gtf="/home/exet4817/smarlow/genomes/mus_musculus/gencode.vM35.annotation.gtf"
-#annatation sJs
+# annotation sJs
 genome_sJS="/home/exet4817/smarlow/genomes/mus_musculus/gencode.vM35.annotation.gtf_SJs_sorted.tsv"
 
 flair correct -g "$genome_fasta"  \
---query RBB_rev.bed  \
+--query  "$input" \
 --gtf "$genome_gtf"  \
 --output $(basename "$input" .bam) --print_check \
 -j "$genome_sJS" \
