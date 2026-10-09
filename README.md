@@ -29,6 +29,12 @@ To run the pipeline just edit each file with the inputs you need. Note that the 
 conda activate CELLO_downstream
 
 ```
+Edit the paths of the file you want to run. 
+```bash
+
+sbatch file_name.sh
+
+```
 
 1. Reverse complement and concatenate all reads into one big file
 2. Align reads to genome
