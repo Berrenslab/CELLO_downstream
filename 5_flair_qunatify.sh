@@ -8,8 +8,6 @@
 #SBATCH --output=flair_quant.out
 #SBATCH --error=flair_quant.err
 
-# actvate environment 
-conda activate CELLO_downstream
 
 #tsv manifest file of cell-specific files
 manifest_tsv='input_fullpath.tsv'
