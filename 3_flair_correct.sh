@@ -18,8 +18,7 @@ genome_gtf="/home/exet4817/smarlow/genomes/mus_musculus/gencode.vM35.annotation.
 # annotation sJs
 genome_sJS="/home/exet4817/smarlow/genomes/mus_musculus/gencode.vM35.annotation.gtf_SJs_sorted.tsv"
 
-flair correct -g "$genome_fasta"  \
---query  "$input" \
+flair correct --query  "$input" \
 --gtf "$genome_gtf"  \
 --output $(basename "$input" .bam) --print_check \
 -j "$genome_sJS" \
