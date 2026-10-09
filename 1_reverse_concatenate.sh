@@ -7,11 +7,6 @@
 #SBATCH --mem=100gb
 #SBATCH --time=55:00:00
 
-# actvate environment 
-source ~/.bashrc
-conda init
-conda activate CELLO_downstream
-
 # path of input corrected fastq reads
 input="/home/grte3662/RBB/data"
 
