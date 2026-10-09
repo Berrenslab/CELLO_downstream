@@ -34,3 +34,6 @@ winnowmap \
 
 # index output bam file 
 samtools index "$output"
+
+# convert sam to bed 
+module load FLAIR
